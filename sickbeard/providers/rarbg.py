@@ -33,7 +33,7 @@ class RarbgProvider(generic.TorrentProvider):
     def __init__(self):
         generic.TorrentProvider.__init__(self, 'Rarbg')
 
-        self.url_home = ['https://rarbgmirror.xyz/']
+        self.url_home = ['https://rarbg.to/']
         # api_spec: https://rarbg.com/pubapi/apidocs_v2.txt
         self.url_api = 'https://torrentapi.org/pubapi_v2.php?app_id=SickGear&'
         self.url_tmpl = {'config_provider_home_uri': '%(home)s'}
