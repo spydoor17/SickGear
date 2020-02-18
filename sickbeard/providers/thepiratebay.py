@@ -37,7 +37,7 @@ class ThePirateBayProvider(generic.TorrentProvider):
     def __init__(self):
         generic.TorrentProvider.__init__(self, 'The Pirate Bay')
 
-        self.url_home = ['https://thepiratebay.se/'] + \
+        self.url_home = ['https://piratebay.party/'] + \
                         ['https://%s/' % b64decodestring(x) for x in [''.join(x) for x in [
                             [re.sub(r'[h\sI]+', '', x[::-1]) for x in [
                                 'm IY', '5  F', 'HhIc', 'vI J', 'HIhe', 'uI k', '2  d', 'uh l']],
